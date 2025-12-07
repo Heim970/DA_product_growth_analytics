@@ -117,7 +117,7 @@
 - `AppOpen`
 - `SearchMenu`: 60%
 - `ViewMenu` x (1~4번)
-- `AddToChart`: impulse_level
+- `AddToCart`: impulse_level
 - `CheckoutStart`: impulse_level \* 0.8
 - `PaymentSuccess`: base_CVR \* experiment_group_effect
 
@@ -141,3 +141,21 @@
 | category      | 카테고리 |
 | price         | 가격     |
 | discount_flag | 할인여부 |
+
+---
+
+## purchases.csv
+
+### purchase 컬럼 구성
+
+| 컬럼             | 설명          |
+| ---------------- | ------------- |
+| purchase_id      | 고유 ID       |
+| user_id          | 구매자        |
+| timestamp        | 구매 시점     |
+| menu_id          | 구매한 메뉴   |
+| price            | 지불 금액     |
+| category         | 메뉴 카테고리 |
+| experiment_group | A/B 그룹      |
+| device           | iOS/Android   |
+| channel          | 유입 경로     |
